@@ -1,1 +1,169 @@
 /* stylesheet for Yosemite Park Guide */
+
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@400;700&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin Stylesheet */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    color: darkslategray;
+    font-family: "Roboto Mono", monospace;
+    width: 100vw;
+}
+.container {
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+/* navbar styles */
+nav {
+    height: 20vh;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    width: 20%;
+    height: 25%;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+nav a.plan {
+    background-color: #ff764e;
+}
+nav a.learn {
+    background-color: #5ed3eb;
+}
+nav a.involved {
+    background-color: #ffcd69;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 2rem;
+}
+header .banner-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .banner-row .banner-text {
+    width: 66%;
+    text-align: center;
+}
+header .banner-row img {
+    width: 20%;
+    border-radius: 50%;
+}
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+main .info-row {
+    background-color: #ddb9a3;
+    color: white;
+    width: 100%;
+}
+main .info-row p {
+    width: 90%;
+    margin: 1rem auto;
+}
+main .icon-text {
+    width: 50%;
+    text-align: center;
+}
+main .icon-text img{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+
+footer{
+    height: 20vh;
+}
+footer .footer-nav {
+    background-color: #f9e7dc;
+    height: 40%;
+}
+
+footer .footer-image{
+    height: 60%;
+    background-image: url("assets/footer_img.jpg");
+    background-size: cover; 
+    background-position: 50% 25%; 
+}
